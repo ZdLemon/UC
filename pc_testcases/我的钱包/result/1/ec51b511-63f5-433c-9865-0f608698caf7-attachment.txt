@@ -1,0 +1,568 @@
+2023-02-02 13:59:39.818 | DEBUG    | api.basic_services._login:_login:27 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic b3BfYXBwOnBlcmZlY3RfcG9ydGFs",
+        "Content-Length":"336",
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    "data":{
+        "data":"XCnx2XTkLPUswRlGgLxDeNjB99v4OPzJHqPSKILjIYmG9paeO2SrOK+Tfo3y1KN2zGJ4fw8TAVNrS/KJpXmh7RIE0hQhgO+h+wg23zXw/O/6/r93ZRkUR2bK3dWTglP9",
+        "key":"eygWOVHSQkrUcELo0AIglqZgrAFAqqAkr/1eu3Xym1baQPLDK+SXGE+yHiNCaunwb8FTYghP8Oc4A9l4vdb1kb6Hv0aOEkkgHV+pkyanIv8nsS7MsmkNi+j5Mn35wTnGRrs1spDS7yR3su9shJiaJVSRD0DTLNUSbq4T36PAxU4="
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:39 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"c67b5132-7e39-4afb-9866-177658b93497",
+            "token_type":"bearer",
+            "refresh_token":"5e597e1f-0112-4b74-a162-c58c00b82f2f",
+            "expires_in":2591999,
+            "error":null,
+            "error_description":null,
+            "userId":"1256132947821634629",
+            "mobile":"18928790001",
+            "nickname":"何伟一号",
+            "username":"hewei01",
+            "memberType":"",
+            "cardNo":"",
+            "userType":"2",
+            "storeCode":"",
+            "companyNo":"01000",
+            "companyName":"总公司",
+            "isStoreManager":null,
+            "data":"{\"lastLoginTime\":1675317092000,\"currenttime\":1675317579477,\"operatorCompanyType\":\"1\",\"operatorNo\":\"hewei01\",\"realname\":\"何伟一号\",\"rowId\":1256132947821634629,\"dataPermission\":\"1,2\",\"lastLoginIp\":\"120.238.242.75\"}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"1256132947821634629-2",
+            "rowid":"1256132947821634629",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:40.151 | DEBUG    | api.basic_services._login_oauth_token:_login_oauth_token:25 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login/oauth/token",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic cG9ydGFsX2FwcDpwZXJmZWN0X3BvcnRhbA==",
+        "Content-Type":"application/x-www-form-urlencoded",
+        "Content-Length":"53"
+    },
+    "data":{
+        "username":"30504555",
+        "password":"888888",
+        "grant_type":"password"
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:39 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"0c49f209-79c7-4d81-86e9-d8ee26c49d4d",
+            "token_type":"bearer",
+            "refresh_token":"63f6fe62-d66d-413d-9313-e6c2349cb198",
+            "expires_in":3599,
+            "error":null,
+            "error_description":null,
+            "userId":"830504555",
+            "mobile":"15738326557",
+            "nickname":"",
+            "username":"920240",
+            "memberType":"3",
+            "cardNo":"30504555",
+            "userType":"1",
+            "storeCode":"920240",
+            "companyNo":"20000",
+            "companyName":"河南分公司",
+            "isStoreManager":"0",
+            "data":"{\"businessMode\":1,\"currenttime\":1675317579775,\"isCanLoginStore\":true,\"isFirstLogin\":false,\"isShowDevelopTool\":true,\"memberStatus\":0,\"openChannel\":0,\"leaderStoreCode\":\"920240\",\"isCanLoginMall\":true,\"realname\":\"刘佳荣\",\"rowId\":830504555,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"100030504555\",\"lastLoginTime\":1675317093000,\"companyId\":100047653682,\"workingStoreName\":\"湛河区宏大日用品服务中心\",\"storeName\":\"湛河区宏大日用品服务中心\",\"storePermission\":\"1,2,3,4,5,8,9\",\"cardStatus\":0}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"830504555-1",
+            "rowid":"830504555",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:40.427 | DEBUG    | api.basic_services._login_oauth_token:_login_oauth_token:25 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login/oauth/token",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic cG9ydGFsX2FwcDpwZXJmZWN0X3BvcnRhbA==",
+        "Content-Type":"application/x-www-form-urlencoded",
+        "Content-Length":"53"
+    },
+    "data":{
+        "username":"14498218",
+        "password":"888888",
+        "grant_type":"password"
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:40 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"88895a98-5989-43d2-890e-50a8c02c3829",
+            "token_type":"bearer",
+            "refresh_token":"99b9660f-a4bf-4623-9fd5-214a66175826",
+            "expires_in":3599,
+            "error":null,
+            "error_description":null,
+            "userId":"814498218",
+            "mobile":"13827493388",
+            "nickname":"",
+            "username":"902208",
+            "memberType":"3",
+            "cardNo":"14498218",
+            "userType":"1",
+            "storeCode":"902208",
+            "companyNo":"34000",
+            "companyName":"中山分公司",
+            "isStoreManager":"0",
+            "data":"{\"businessMode\":2,\"currenttime\":1675317580055,\"isCanLoginStore\":true,\"isFirstLogin\":false,\"isShowDevelopTool\":true,\"memberStatus\":0,\"openChannel\":0,\"leaderStoreCode\":\"902208\",\"isCanLoginMall\":true,\"realname\":\"李哲\",\"rowId\":814498218,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"100014498218\",\"lastLoginTime\":1675317094000,\"companyId\":100048696367,\"workingStoreName\":\"深圳市龙岗区金泽泰健康服务中心\",\"storeName\":\"深圳市龙岗区金泽泰健康服务中心\",\"storePermission\":\"1,2,3,4,5,8,9\",\"cardStatus\":0}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"814498218-1",
+            "rowid":"814498218",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:40.710 | DEBUG    | api.basic_services._login:_login:27 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic b3BfYXBwOnBlcmZlY3RfcG9ydGFs",
+        "Content-Length":"330",
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    "data":{
+        "data":"7f+T5OsBi57qMiNca6i1WbdBid240DcsT0UbV+1Jp/qG9paeO2SrOK+Tfo3y1KN2Hl0RfjtQwsOJMDqnWaeC9xsNHANZ/NaIdHEBUDn2vFtblnJsHhIS6nVyn3oQ10ie",
+        "key":"Isk/NBtAcAnZDf1chPVprCjMwuWtBuOxAJl1ZAccvcfK3Llvu526BDrYOvrKJSPnOPv8ZYZxJPulve7tnhxt81UkYMk1lXS2aXXH3NpIj0dj+ObRw7oeawS9SYZ24P+eMywifGoz/tBJoyaxZ3tYt2oYVORJJ8RuODhU675EtQI="
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:40 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"ccbb1854-e3f1-42e1-905b-bb558b3436bd",
+            "token_type":"bearer",
+            "refresh_token":"6f7d6717-9f1c-4eea-ae58-3f1ca0f06544",
+            "expires_in":2591999,
+            "error":null,
+            "error_description":null,
+            "userId":"845722864",
+            "mobile":"18928798943",
+            "nickname":"",
+            "username":"902804",
+            "memberType":"3",
+            "cardNo":"45722864",
+            "userType":"1",
+            "storeCode":"902804",
+            "companyNo":"34000",
+            "companyName":"中山分公司",
+            "isStoreManager":"0",
+            "data":"{\"businessMode\":1,\"currenttime\":1675317580347,\"isCanLoginStore\":true,\"isFirstLogin\":false,\"isShowDevelopTool\":true,\"memberStatus\":0,\"openChannel\":4,\"leaderStoreCode\":\"902804\",\"isCanLoginMall\":true,\"realname\":\"宋少美\",\"rowId\":845722864,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"100045722864\",\"lastLoginTime\":1675317093000,\"companyId\":100048696367,\"workingStoreName\":\"深圳市宝安区新桥斌美瑞商品信息咨询大大大服务\",\"storeName\":\"深圳市宝安区新桥斌美瑞商品信息咨询大大大服务\",\"storePermission\":\"1,2,3,4,5,8,9\",\"cardStatus\":0}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"845722864-1",
+            "rowid":"845722864",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:41.033 | DEBUG    | api.basic_services._login:_login:27 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic b3BfYXBwOnBlcmZlY3RfcG9ydGFs",
+        "Content-Length":"324",
+        "Content-Type":"application/x-www-form-urlencoded"
+    },
+    "data":{
+        "data":"i+UxCjfVjtQom9Pcf61rkA5Orq88LADH+l+F2atGC7yG9paeO2SrOK+Tfo3y1KN2Hl0RfjtQwsOJMDqnWaeC9xsNHANZ/NaIdHEBUDn2vFuIDB0Yt4kHiR5eH1k520Gg",
+        "key":"epxGhU2Y6SmqsHUcE0VRfAzItha5bZZHehY2UipsGVJWke8VOdJzU7jxG9y62wKEGaitoYluufiTojRezChqRZlzfd9j5MEtvN9Hfw9Sx2uAD/STZfX77PRl8vTRFtMhVhNAwJxCZ8TuqDDjTySPCSp93OQIgDllgzvRdA1S2eY="
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:40 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"07c09bdb-8e03-4561-a1cd-6f0967d911e3",
+            "token_type":"bearer",
+            "refresh_token":"bf8544f1-b616-4b27-a449-245a6c5147bc",
+            "expires_in":2591999,
+            "error":null,
+            "error_description":null,
+            "userId":"814498218",
+            "mobile":"13827493388",
+            "nickname":"",
+            "username":"902208",
+            "memberType":"3",
+            "cardNo":"14498218",
+            "userType":"1",
+            "storeCode":"902208",
+            "companyNo":"34000",
+            "companyName":"中山分公司",
+            "isStoreManager":"0",
+            "data":"{\"businessMode\":2,\"currenttime\":1675317580625,\"isCanLoginStore\":true,\"isFirstLogin\":false,\"isShowDevelopTool\":true,\"memberStatus\":0,\"openChannel\":0,\"leaderStoreCode\":\"902208\",\"isCanLoginMall\":true,\"realname\":\"李哲\",\"rowId\":814498218,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"100014498218\",\"lastLoginTime\":1675317580000,\"companyId\":100048696367,\"workingStoreName\":\"深圳市龙岗区金泽泰健康服务中心\",\"storeName\":\"深圳市龙岗区金泽泰健康服务中心\",\"storePermission\":\"1,2,3,4,5,8,9\",\"cardStatus\":0}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"814498218-1",
+            "rowid":"814498218",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:41.278 | DEBUG    | api.basic_services._login_oauth_token:_login_oauth_token:25 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login/oauth/token",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic cG9ydGFsX2FwcDpwZXJmZWN0X3BvcnRhbA==",
+        "Content-Type":"application/x-www-form-urlencoded",
+        "Content-Length":"55"
+    },
+    "data":{
+        "username":"3000004576",
+        "password":"888888",
+        "grant_type":"password"
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:41 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"58d13e8d-7ff1-4306-96b4-2ed2a9e17985",
+            "token_type":"bearer",
+            "refresh_token":"3b5dedec-dbd8-41ab-bfbb-68d846f4e3ff",
+            "expires_in":3599,
+            "error":null,
+            "error_description":null,
+            "userId":"1270780218333984672",
+            "mobile":"13259690093",
+            "nickname":"3000004576",
+            "username":"3000004576",
+            "memberType":"1",
+            "cardNo":"3000004576",
+            "userType":"1",
+            "storeCode":"",
+            "companyNo":"03000",
+            "companyName":"北京分公司",
+            "isStoreManager":"1",
+            "data":"{\"businessMode\":\"\",\"currenttime\":1675317580927,\"isCanLoginStore\":false,\"isFirstLogin\":false,\"isShowDevelopTool\":false,\"memberStatus\":0,\"openChannel\":4,\"leaderStoreCode\":\"\",\"isCanLoginMall\":true,\"realname\":\"余黎\",\"rowId\":1270780218333986172,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"800000083350\",\"lastLoginTime\":1675317094000,\"companyId\":100045896013,\"workingStoreName\":\"\",\"storeName\":\"\",\"storePermission\":\"\",\"cardStatus\":-2}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"1270780218333986172-1",
+            "rowid":"1270780218333986172",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:41.540 | DEBUG    | api.basic_services._login_oauth_token:_login_oauth_token:25 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/login/oauth/token",
+    "method":"POST",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"Basic cG9ydGFsX2FwcDpwZXJmZWN0X3BvcnRhbA==",
+        "Content-Type":"application/x-www-form-urlencoded",
+        "Content-Length":"53"
+    },
+    "data":{
+        "username":"26712599",
+        "password":"888888",
+        "grant_type":"password"
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:41 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive",
+        "X-Content-Type-Options":"nosniff",
+        "X-XSS-Protection":"1; mode=block",
+        "Cache-Control":"no-cache, no-store, max-age=0, must-revalidate",
+        "Pragma":"no-cache",
+        "Expires":"0"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":{
+            "access_token":"ba197023-063b-4510-8819-6c08be58028b",
+            "token_type":"bearer",
+            "refresh_token":"9767ecb1-2ee8-4d9d-841e-9440eec835c7",
+            "expires_in":3599,
+            "error":null,
+            "error_description":null,
+            "userId":"826712599",
+            "mobile":"18818336838",
+            "nickname":"",
+            "username":"26712599",
+            "memberType":"2",
+            "cardNo":"26712599",
+            "userType":"1",
+            "storeCode":"902099",
+            "companyNo":"34000",
+            "companyName":"中山分公司",
+            "isStoreManager":"1",
+            "data":"{\"businessMode\":\"\",\"currenttime\":1675317581181,\"isCanLoginStore\":false,\"isFirstLogin\":false,\"isShowDevelopTool\":true,\"memberStatus\":0,\"openChannel\":5,\"leaderStoreCode\":\"\",\"isCanLoginMall\":true,\"realname\":\"黄宇\",\"rowId\":826712599,\"lastLoginIp\":\"120.238.242.75\",\"memberNo\":\"100026712599\",\"lastLoginTime\":1675317094000,\"companyId\":100048696367,\"workingStoreName\":\"\",\"storeName\":\"深圳市龙岗区港成服务中心\",\"storePermission\":\"\",\"cardStatus\":0}",
+            "active":null,
+            "exp":null,
+            "unionId":null,
+            "openId":null,
+            "avatar":null,
+            "code":null,
+            "growid":"826712599-1",
+            "rowid":"826712599",
+            "source":null
+        }
+    }
+}
+
+2023-02-02 13:59:41.803 | DEBUG    | api.mall_mobile_application._mobile_wallet_rechargeMethod:_mobile_wallet_rechargeMethod:25 - 
+====== request details ======
+{
+    "url":"https://uc-test.perfect99.com/api/mobile/wallet/rechargeMethod?payType=PC",
+    "method":"GET",
+    "headers":{
+        "User-Agent":"python-requests/2.28.2",
+        "Accept-Encoding":"gzip, deflate",
+        "Accept":"*/*",
+        "Connection":"keep-alive",
+        "Authorization":"bearer 0c49f209-79c7-4d81-86e9-d8ee26c49d4d"
+    },
+    "params":{
+        "payType":"PC"
+    }
+}
+====== response details ======
+{
+    "status_code":200,
+    "headers":{
+        "Date":"Thu, 02 Feb 2023 05:59:41 GMT",
+        "Content-Type":"application/json;charset=UTF-8",
+        "Transfer-Encoding":"chunked",
+        "Connection":"keep-alive"
+    },
+    "body":{
+        "code":200,
+        "message":"操作成功",
+        "data":[
+            {
+                "payPartnerId":"203",
+                "paywayName":"邮政储蓄银行",
+                "transCardType":2,
+                "bankType":"PSBC",
+                "bankAccount":"622123852147",
+                "bankName":"邮政储蓄银行",
+                "bankBranchName":"",
+                "defaultSignAccount":1,
+                "rate":0.0
+            },
+            {
+                "payPartnerId":"202",
+                "paywayName":"建设银行",
+                "transCardType":null,
+                "bankType":null,
+                "bankAccount":null,
+                "bankName":null,
+                "bankBranchName":null,
+                "defaultSignAccount":null,
+                "rate":0.0
+            },
+            {
+                "payPartnerId":"103",
+                "paywayName":"银联",
+                "transCardType":null,
+                "bankType":null,
+                "bankAccount":null,
+                "bankName":null,
+                "bankBranchName":null,
+                "defaultSignAccount":null,
+                "rate":0.0
+            },
+            {
+                "payPartnerId":"101",
+                "paywayName":"微信支付",
+                "transCardType":null,
+                "bankType":null,
+                "bankAccount":null,
+                "bankName":null,
+                "bankBranchName":null,
+                "defaultSignAccount":null,
+                "rate":0.0
+            },
+            {
+                "payPartnerId":"102",
+                "paywayName":"支付宝支付",
+                "transCardType":null,
+                "bankType":null,
+                "bankAccount":null,
+                "bankName":null,
+                "bankBranchName":null,
+                "defaultSignAccount":null,
+                "rate":0.0
+            }
+        ]
+    }
+}
+
